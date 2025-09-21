@@ -1,0 +1,49 @@
+import React from 'react'
+import BannerImage from "../../assets/BannerImage/BannerImage.jpg"
+import { IoRibbonSharp } from "react-icons/io5";
+import { TbTruckDelivery } from "react-icons/tb";
+import { MdOutlineAttachMoney } from "react-icons/md";
+import { RiDiscountPercentFill } from "react-icons/ri";
+
+const Banner = () => {
+  return (
+    <div className='min-h-[550px] flex justify-center items-center py-12 sm:py-0'>
+      <div className='container'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 items-center'>
+            <div data-aos="zoom-in">
+                <img src={BannerImage} alt="" className='max-w-[400px] h-[350px] w-full mx-auto drop-shadow-[10px_10px_12px_tgba(0,0,0,1)] object-cover'/>
+            </div>
+
+            <div className='flex flex-col justify-center gap-6 sm:pt-0'>
+              <h1 className='text-3xl sm:text-4xl font-bold md:text-2xl dark:text-white'>Winter Sale up to 50% off</h1>
+              <p className='text-sm text-gray-500 tracking-wide leading-5 dark:text-gray-300'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, inventore architecto autem.</p>
+              <div className='flex flex-col gap-4'>
+                <div className='flex items-center gap-4'>
+                  <IoRibbonSharp className='text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-violet-100 dark:bg-violet-400'/>
+                  <p className='dark:text-white'>Quality Products</p>
+                </div>
+
+                <div className='flex items-center gap-4'>
+                  <TbTruckDelivery className='text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-orange-100 dark:bg-orange-400'/>
+                  <p className='dark:text-white'>Fast Delivery</p>
+                </div>
+
+                <div className='flex items-center gap-4'>
+                  <MdOutlineAttachMoney className='text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-green-100 dark:bg-green-400'/>
+                  <p className='dark:text-white'>Easy Payment Method</p>
+                </div>
+
+                <div className='flex items-center gap-4'>
+                  <RiDiscountPercentFill className='text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-yellow-100 dark:bg-yellow-400'/>
+                  <p className='dark:text-white'>Get Offers</p>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Banner;
